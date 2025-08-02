@@ -4,35 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Learning Tracker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <script defer src="renderer.js"></script>
+  <link rel="stylesheet" href="assets/bootstrap.min.css" />
+  <style>
+    .card-box {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .card-box:hover {
+      transform: scale(1.05);
+      background-color: #f8f9fa;
+    }
+  </style>
 </head>
 <body class="bg-light">
   <div class="container py-4">
-    <h2 class="text-center mb-4">🚀 Learning Tracker Dashboard</h2>
+    <h2 class="text-center mb-5">🚀 Learning Tracker Dashboard</h2>
 
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-header bg-primary text-white">🎯 Today's Log</div>
-          <div class="card-body">
-            <textarea class="form-control mb-3" id="logText" rows="6" placeholder="What did you study today?"></textarea>
-            <button id="saveLog" class="btn btn-success w-100">Save Today's Log</button>
-          </div>
-        </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='dsa.html'">DSA</div>
       </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-header bg-info text-white">📌 Goal</div>
-          <div class="card-body">
-            <textarea class="form-control mb-3" id="goalText" rows="3" placeholder="Enter your coding goal"></textarea>
-            <button id="saveGoal" class="btn btn-info w-100">Update Goal</button>
-          </div>
-          <div class="card-footer text-muted" id="goalDisplay">Your current goal will show here.</div>
-        </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='system-design.html'">System Design</div>
+      </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='low-level-design.html'">Low Level Design</div>
+      </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='cs-fundamentals.html'">CS Fundamentals</div>
+      </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='frontend-basics.html'">Frontend Basics</div>
+      </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='devops.html'">DevOps/Deployment Basics</div>
+      </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='springboot.html'">Springboot</div>
+      </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='nodejs.html'">NodeJS</div>
+      </div>
+      <div class="col">
+        <div class="card card-box shadow-sm" onclick="location.href='side-projects.html'">Side Projects</div>
       </div>
     </div>
   </div>
+
+  <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/amitp11/learning-tracker-app/issues"
   },
-  "homepage": "https://github.com/amitp11/learning-tracker-app#readme"
+  "homepage": "https://github.com/amitp11/learning-tracker-app#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
 }
