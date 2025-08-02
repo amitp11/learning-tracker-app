@@ -1,0 +1,23 @@
+{
+  "name": "learning-tracker-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.3.0"
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitp11/learning-tracker-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amitp11/learning-tracker-app/issues"
+  },
+  "homepage": "https://github.com/amitp11/learning-tracker-app#readme"
+}
